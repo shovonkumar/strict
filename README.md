@@ -1,2 +1,3 @@
 # strict
-STRICT Landing Page
+STRICT Landing Page  
+Live Link : https://shovonkumar.github.io/strict/
