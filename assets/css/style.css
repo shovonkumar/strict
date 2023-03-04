@@ -1,0 +1,353 @@
+/* ===========================
+Designed by : Shovon Kumar
+Author : Shovon Kumar
+Contact : facebook.com/shovon2
+============================= */
+
+/* Commmon CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul li {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary: #15a4fa;
+    --secondary: #2d3950;
+    --third: #999999;
+}
+/* Commmon CSS End */
+
+/* Back to top button Start */
+.back_to_top {
+    color: #fff;
+    background: var(--primary);
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 0.3rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    transition: 0.3s;
+    display: none;
+    z-index: 5;
+}
+.back_to_top:hover {
+    color: var(--secondary);
+}
+/* Back to top button End */
+
+/* Header Part Start */
+.header_part {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.navbar {
+    background: #f6f9f9;
+    padding: 0.8rem 0;
+}
+.nav_bg_sticky{
+    background: #f6f9f9ef;
+    transition: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--secondary);
+    transition: 0.4s;
+    margin-left: 5px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--primary);
+}
+/* Header Part End  */
+
+
+/* Hero Part Start */
+.hero_part {
+    background: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.349)), url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+.hero_element h1 {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.hero_element h1::after {
+    content: "";
+    display: block;
+    height: 0.1rem;
+    width: 50%;
+    background: var(--primary);
+    margin: 20px auto;
+}
+.hero_element p {
+    font-size: 1.1rem;
+    padding-bottom: 2.1rem;;
+}
+.hero_element a {
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 0;
+    padding: 10px 20px;
+    transition: 0.4s;
+    margin-bottom: 8rem;
+}
+.hero_element a:hover {
+    background: var(--primary);
+}
+.hero_element span {
+    margin-bottom: 1rem;
+}
+.hero_element span i {
+    transition: 0.4s;
+}
+.hero_element span:hover i {
+    color: var(--primary);
+    cursor: pointer;
+}
+/* Hero Part End */
+
+/* Design Part Start */
+
+.design_part {
+    background: #f6f9f9;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+}
+.design_content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--secondary);
+    margin-bottom: 0.9rem;
+}
+.design_content p {
+    font-size: 0.9rem;
+    color: var(--third);
+    line-height: 1.7rem;
+}
+/* Design Part End */
+
+/* Service Part Start */
+.service_part {
+    padding: 3rem 0;
+}
+.service_content span {
+    padding: 1.2rem 1.3rem;
+    background: var(--primary);
+}
+.service_content span i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.service_content h5 {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-top: 2.1rem;
+}
+.service_content p {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--third);
+}
+/* Service Part End */
+
+/* Portfolio Part Start */
+.portfolio_part {
+    background: #f6f9f9;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.portfolio_content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+}
+.portfolio_content p {
+    font-size: 0.9rem;
+    color: var(--third);
+}
+.portfolio_heading {
+    margin-bottom: 2.5rem;
+}
+
+.portfolio_image {
+    position: relative;
+}
+.portfolio_image:hover .img_hover {
+    opacity: 1;
+    visibility: visible;
+}
+.img_hover {
+    height: 100%;
+    width: 100%;
+    background: #25a2f0b2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.hover_icon a i{
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.3rem;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
+.portfolio_content {
+    overflow: hidden;
+}
+.portfolio_content .portfolio-filter button {
+    background: var(--primary);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.45rem 1.3rem;
+    border: 0;
+    border-radius: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+.portfolio_content .portfolio-filter button:nth-child(4) {
+    margin-right: 0;
+}
+.portfolio_content .portfolio-filter button:hover {
+   box-shadow: rgba(50, 50, 93, 0.35) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px inset;
+}
+.portfolio_content .portfolio-filter .mixitup-control-active {
+    background: var(--secondary);
+}
+/* Portfolio Part End */
+
+/* Contact Part Start */
+.contact_part {
+    background: linear-gradient(#2c374ce8, #2c374ce8), url(../img/contact_bg.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+}
+.contact_content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+.contact_content p {
+    font-size: 0.9rem;
+    color: var(--third); 
+}
+
+.contact_content form {
+    width: 100%;
+    margin-top: 2rem;
+}
+.contact_content input[type="text"],
+.contact_content input[type="email"],
+.contact_content textarea {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    color: var(--third);
+}
+.contact_content input[type="text"]:focus,
+.contact_content input[type="email"]:focus,
+.contact_content textarea:focus {
+    border: 1px solid #fff;
+}
+.contact_content button {
+    margin-top: 0.3rem;
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 0;
+    padding: 8px 40px;
+    transition: 0.4s;
+}
+.contact_content button:hover {
+    background: var(--primary);
+}
+/* Contact Part End */
+
+/* Footer Part Start */
+.footer_part {
+    padding: 0.9rem;
+}
+.footer_content p {
+    margin: 0;
+    padding: 0;
+    color: var(--third);
+    font-size: 0.9rem;
+}
+.footer_content .link {
+    margin-bottom: 0;
+}
+.footer_content ul li a {
+    background: var(--primary);
+    display: block;
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+    line-height: 1.8rem;
+    margin-left: 0.5rem;
+    transition: .4s;
+}
+.footer_content ul li a:hover {
+   background: #3b5998;
+}
+.footer_content ul li a i {
+    color: #fff;
+    font-size: 0.8rem;
+}
+/* Footer Part End */
