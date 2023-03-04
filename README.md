@@ -1,0 +1,2 @@
+# strict
+STRICT Landing Page
